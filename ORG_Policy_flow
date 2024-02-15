@@ -1,9 +1,11 @@
 
 Here are some examples of organization policies for BigQuery in GCP, categorized by their purpose, along with steps on how to implement them:
+
 Data Access Control:
 Policy: Restrict public datasets
+
 Steps:
-1.	Navigate to the Resource Manager in GCP console.
+1.	Navigate to the IAM/Resource Manager in GCP console.
 2.	Go to Policies 
 3.	Click Organization Policies.
 4.	Click Create Policy.
@@ -12,6 +14,7 @@ Steps:
 7.	Set the rule to Deny Public Access.
 8.	Bind the policy to your organization or specific folders/projects.
 Policy: Limit viewer role usage
+
 Steps:
 1.	Follow steps 1-3 from the previous policy.
 2.	Select IAM as the policy rule.
@@ -21,6 +24,7 @@ Steps:
 6.	Bind the policy as needed.
 Data Security:
 Policy: Enforce encryption at rest and in transit
+
 Steps:
 1.	Follow steps 1-3 from the first policy.
 2.	Select Encryption as the policy rule.
@@ -29,6 +33,7 @@ Steps:
 5.	Optional: Configure key management settings with Cloud KMS.
 6.	Bind the policy to your organization.
 Policy: Enable Data Loss Prevention (DLP)
+
 Steps:
 1.	Follow steps 1-3 from the first policy.
 2.	Select Data Loss Prevention (DLP) as the policy rule.
@@ -37,6 +42,7 @@ Steps:
 5.	Bind the policy to your organization.
 Resource Management:
 Policy: Set quotas for concurrent queries and slots
+
 Steps:
 1.	Follow steps 1-3 from the first policy.
 2.	Select Quota as the policy rule.
@@ -44,6 +50,7 @@ Steps:
 4.	Set the desired quota limits based on your needs.
 5.	Bind the policy to your organization or specific projects.
 Policy: Enforce cost allocation tags
+
 Steps:
 1.	Follow steps 1-3 from the first policy.
 2.	Select Resource Tagging as the policy rule.
